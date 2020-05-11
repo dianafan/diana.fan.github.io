@@ -1,0 +1,179 @@
+html {
+    margin: 0px;
+    cursor:url(http://static.tumblr.com/kmw8hta/YoEn3ksuh/zorzc.png), auto;
+    height: 900px;
+}
+
+
+body {
+    margin: 0px;
+    background-color: #F4F0E7;
+    color: #333333;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+nav {
+    width: 75%;
+    height: 50px;
+    margin-top: 3%;
+    margin-left: 12.5%;
+}
+
+.navbar {
+    margin-bottom: 3.8%;
+}
+
+.nav-item, .nav-item:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+.home {
+    font-family: 'Roboto Mono', sans-serif;
+    color: #fb7639;
+    text-decoration: none;
+}
+.home:visited {
+    color: #fb7639;
+    text-decoration: none;
+}
+
+
+.menu a::before {
+    position: absolute;
+    overflow: hidden;
+    max-width: 0;
+    color: #fb7639;
+    content: attr(data-hover);
+    transition-property: max-width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu a:hover::before,
+.menu a:focus::before {
+	max-width: 100%;
+}
+
+.menu a:visited::after {
+	max-width: 0%;
+}
+
+.menu {
+    font-family: 'Roboto Mono', monospace;
+    color: #777777;
+    margin-left: 40px;
+    float: right;
+}    
+
+.nav-item {
+    margin-left: 30px;
+}
+
+
+nav {
+    list-style-type: none;
+}
+
+.content {
+    width: 75%;
+    margin: auto;
+}
+
+
+.content {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #fb7639;
+}
+
+.content::-webkit-scrollbar-track {
+    background: rgb(212, 208, 199);
+}
+
+#divider {
+    background-color: #fb7639;
+    width: 70%;
+    height: 1px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-family: 'Roboto Mono', sans-serif;
+    color: #fb7639;
+}
+
+.subtitle {
+    font-family: 'DM Sans', sans-serif;
+    color: #777777;
+    font-size: 16px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+}
+.project-data {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 16px;
+    color: #fb7639;
+    margin-bottom: 2.5px;
+}
+
+.info {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    line-height: 0.75;
+    width: 100%;
+    margin-right: 80px;
+    
+}
+.hp-main {
+    margin-bottom: 5%;
+}
+.hp-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hp {
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.project-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}

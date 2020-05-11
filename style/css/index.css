@@ -1,0 +1,236 @@
+html {
+    margin: 0px;
+    cursor:url(http://static.tumblr.com/kmw8hta/YoEn3ksuh/zorzc.png), auto;
+    height: 900px;
+}
+
+
+body {
+    margin: 0px;
+    background-color: #F4F0E7;
+    color: #333333;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+nav {
+    width: 75%;
+    height: 50px;
+    margin-top: 3%;
+    margin-left: 12.5%;
+}
+
+.navbar {
+    margin-bottom: 3.8%;
+}
+
+.nav-item, .nav-item:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+.home {
+    font-family: 'Roboto Mono', sans-serif;
+    color: #fb7639;
+    text-decoration: none;
+}
+.home:visited {
+    color: #fb7639;
+    text-decoration: none;
+}
+
+
+.menu a::before {
+    position: absolute;
+    overflow: hidden;
+    max-width: 0;
+    color: #fb7639;
+    content: attr(data-hover);
+    transition-property: max-width;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.intro1:hover {
+    color: #fb7639;
+}
+
+.intro1 {
+    width: 275px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu a:hover::before,
+.menu a:focus::before {
+	max-width: 100%;
+}
+
+.menu a:visited::after {
+	max-width: 0%;
+}
+
+.menu {
+    font-family: 'Roboto Mono', monospace;
+    color: #777777;
+    margin-left: 40px;
+    float: right;
+}    
+
+.nav-item {
+    margin-left: 30px;
+}
+
+
+nav {
+    list-style-type: none;
+}
+
+.content {
+    width: 75%;
+    margin: auto;
+}
+
+.intro {
+    width: 85%;
+}
+.intro1, .intro2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 42px;
+}
+
+
+#arrow {
+    margin-top: 15px;
+}
+
+#arrow:hover {
+    cursor: pointer;
+}
+
+@keyframes bounceDown {
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+#arrow {
+    animation: bounceDown 0.5s cubic-bezier(0.7, 0, 0.7, 0.5) 0s infinite alternate;
+}
+
+.projects {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card {
+    height: 280px;
+    margin: 5%;
+    transform: scale(1);
+    transition-duration: 0.2;
+    transition-timing-function: ease-in;
+    box-shadow: 0 0 15px rgb(161, 156, 148, 0.8);
+
+}
+
+
+#car img:hover {
+    filter: brightness(50%);
+    transition-timing-function: ease-in;
+    overflow: hidden;
+}
+
+#car:hover .text {
+    z-index: 50;
+    font-family: 'Roboto Mono', sans-serif;
+    opacity: 1;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    transition-timing-function: ease-in;
+}
+
+.card,#car:visited {
+    text-decoration: none;
+}
+
+
+.overlay {
+    position: relative;
+    visibility: visible;
+    top: -200px;
+    text-decoration: none;
+
+}
+
+.text_overlay {
+    font-family: 'Roboto Mono', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.projects:visited {
+    text-decoration: none;
+}
+
+
+.card img:hover {
+    transform: scale(1.01);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    box-shadow: 0 0 15px rgb(161, 156, 148, 0.8);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.car {
+    top: -315px;
+}
+
+.caption {
+    font-family: 'Roboto Mono', sans-serif;
+    color: #fb7639;
+    margin-bottom: 20px;
+}
+
+.caption:visited {
+    color: #777777;
+}
+
+#car_caption {
+    margin-top: -65px;
+}
+
+.content {
+    height: 500px;
+    overflow-y: scroll;
+    /* font-size: 16px; */
+}
+
+.content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: #fb7639;
+}
+
+.content::-webkit-scrollbar-track {
+    background: rgb(212, 208, 199);
+}
